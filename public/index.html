@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Precium · El mapa del ahorro</title>
+<meta name="description" content="Encontrá el mejor precio para tu canasta completa en los comercios físicos de tu zona.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%23e85a00%27/%3E%3Cpath stroke=%27%23fff%27 stroke-width=%2710%27 stroke-linecap=%27round%27 d=%27M27 68 77 20%27/%3E%3C/svg%3E">
+<meta name="theme-color" content="#cb4f00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/landing.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff9a5c"/><stop offset="1" stop-color="#ff6300"/>
+    </linearGradient>
+    <symbol id="mark" viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="22" fill="url(#g)"/>
+      <path fill="#fff" fill-rule="evenodd" d="M31 41C24 32 19 27 19 21a12 12 0 0 1 24 0c0 6-5 11-12 20ZM26 20a5 5 0 1 0 10 0a5 5 0 1 0-10 0Z"/>
+      <path fill="#fff" fill-rule="evenodd" d="M74 42c7 9 12 14 12 20a12 12 0 0 1-24 0c0-6 5-11 12-20ZM69 63a5 5 0 1 0 10 0a5 5 0 1 0-10 0Z"/>
+      <path stroke="#fff" stroke-width="10" stroke-linecap="round" d="M27 68 77 20"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div id="ov" hidden></div>
+<aside id="menu" aria-label="Menú">
+  <span class="wm" style="font-size:1.4rem">Precium</span>
+  <ul>
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/canasta.html">Armar canasta</a></li>
+    <li><a href="/canasta.html#guardadas">Mis canastas</a></li>
+    <li><a href="/contribuir.html">Contribuir</a></li>
+    <li><a href="#como-funciona">Cómo funciona</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</aside>
+
+<header class="wrap bar" id="inicio">
+  <button id="mb" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+  <nav id="nav-auth" aria-label="Cuenta"><a href="/login.html">Iniciar sesión</a><a class="pill" href="/registro.html">Registrarse</a></nav>
+</header>
+
+<main id="main">
+<div class="wrap hero">
+  <div>
+    <div class="brand">
+      <h1>Bienvenido<br>a Precium</h1>
+      <svg class="mark" role="img" aria-label="Logo de Precium"><use href="#mark"/></svg>
+    </div>
+    <p class="lead">Encontrá el mejor precio para cualquier situación</p>
+    <div class="acts">
+      <a class="btn" href="/canasta.html">Armá mi canasta</a>
+      <a href="#como-funciona">Ver cómo funciona</a>
+    </div>
+  </div>
+  <div class="demo" aria-label="Ejemplo de resultado">
+    <div class="top"><span>Tu canasta · 8 productos</span><span class="tag">Ejemplo</span></div>
+    <h3>Autoservicio La Esquina</h3>
+    <div class="meta">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Zm0-9a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg>
+      a 650 m · 8 de 8 productos con precio
+    </div>
+    <div class="save"><b>12%</b><span>de ahorro estimado frente al promedio de tu zona</span></div>
+    <small>Basado en 14 reportes · actualizado hace 2 días</small>
+    <a class="btn" href="/canasta.html">Cómo llegar</a>
+  </div>
+</div>
+
+<section id="como-funciona">
+  <div class="wrap">
+    <h2>Compará toda tu compra, no producto por producto</h2>
+    <ol class="steps">
+      <li><h3>Armá tu canasta</h3><p>Buscá lo que necesitás o partí de una canasta que ya guardaste.</p></li>
+      <li><h3>Compará por el total</h3><p>Sumamos tu canasta completa en cada comercio cercano.</p></li>
+      <li><h3>Andá directo al comercio</h3><p>Te mostramos el más conveniente, a qué distancia está, y te llevamos con un toque a Google Maps.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Ahorrar con criterio</h2>
+    <div class="vals">
+      <div><h3>Ahorro inteligente</h3><p>Ahorrar es una decisión astuta, no un sacrificio de calidad.</p></div>
+      <div><h3>Hecho en comunidad</h3><p>Cada precio que comparte un vecino ayuda a todos a decidir mejor.</p></div>
+      <div><h3>Información verificable</h3><p>Cada resultado indica cuántos reportes lo respaldan y cuándo se actualizaron.</p></div>
+      <div><h3>Para todos</h3><p>Pensado para el barrio y al alcance de cualquier persona.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap split single">
+    <div id="contribuir">
+      <h2>Sumá un precio</h2>
+      <p>Escaneá un ticket o un código de barras y compartí lo que pagaste. Solo guardamos producto, precio, comercio y fecha; la foto no se conserva.</p>
+      <a class="btn" href="/contribuir.html">Sumar un precio</a>
+    </div>
+  </div>
+</section>
+
+<section id="preguntas">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿De dónde salen los precios?</summary><p>De la comunidad: usuarios que comparten los precios de sus compras, y de fuentes públicas cuando están disponibles.</p></details>
+    <details><summary>¿Cómo sé que un precio es confiable?</summary><p>Cada resultado muestra cuántos reportes lo respaldan y cuándo se actualizó. Los valores atípicos se descartan automáticamente.</p></details>
+    <details><summary>¿Por qué no veo una lista de precios?</summary><p>Precium responde una pregunta concreta: dónde te conviene comprar tu canasta. Por eso te mostramos el comercio más conveniente y no un listado de precios.</p></details>
+  </div>
+</section>
+
+<section class="fin" style="padding-top:0">
+  <div class="wrap">
+    <h2>Empezá tu primera canasta</h2>
+    <a class="btn" href="/canasta.html">Armá mi canasta</a>
+  </div>
+</section>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div class="fg">
+      <div><span class="wm" style="font-size:1.5rem">Precium</span><p>El mapa del ahorro</p></div>
+      <div><b>Producto</b><ul><li><a href="#como-funciona">Cómo funciona</a></li><li><a href="/canasta.html">Armar canasta</a></li><li><a href="/contribuir.html">Contribuir</a></li></ul></div>
+      <div><b>Ayuda</b><ul><li><a href="#contacto">Contacto</a></li><li><a href="#preguntas">Preguntas frecuentes</a></li></ul></div>
+      <div><b>Legal</b><ul><li><a href="/terminos.html">Términos y condiciones</a></li><li><a href="/privacidad.html">Política de privacidad</a></li></ul></div>
+    </div>
+    <p class="fine">Prototipo · los datos mostrados son de muestra.</p>
+  </div>
+</footer>
+
+<script src="/js/menu.js"></script>
+<script src="/js/api.js"></script>
+<script src="/js/session.js"></script>
+<script>PreciumSession.renderNav(document.getElementById('nav-auth'));</script>
+</body>
+</html>

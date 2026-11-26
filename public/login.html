@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Iniciar sesión · Precium</title>
+<meta name="description" content="Ingresá a tu cuenta de Precium para sumar precios y guardar tus canastas.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%23e85a00%27/%3E%3Cpath stroke=%27%23fff%27 stroke-width=%2710%27 stroke-linecap=%27round%27 d=%27M27 68 77 20%27/%3E%3C/svg%3E">
+<meta name="theme-color" content="#cb4f00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/landing.css">
+<link rel="stylesheet" href="/css/canasta.css">
+<link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div id="ov" hidden></div>
+<aside id="menu" aria-label="Menú">
+  <span class="wm" style="font-size:1.4rem">Precium</span>
+  <ul>
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/canasta.html">Armar canasta</a></li>
+    <li><a href="/canasta.html#guardadas">Mis canastas</a></li>
+    <li><a href="/contribuir.html">Contribuir</a></li>
+    <li><a href="/#como-funciona">Cómo funciona</a></li>
+    <li><a href="/#contacto">Contacto</a></li>
+  </ul>
+</aside>
+
+<header class="wrap bar">
+  <button id="mb" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+  <a class="wm" href="/" style="font-size:1.2rem;text-decoration:none" aria-label="Precium, ir al inicio">Precium</a>
+  <nav id="nav-auth" aria-label="Cuenta"></nav>
+</header>
+
+<main class="page narrow" id="main">
+  <div class="crumb"><a href="/">← Volver a Precium</a></div>
+  <h1 class="title">Iniciar sesión</h1>
+  <div class="card auth">
+    <form id="login-form" novalidate>
+      <div class="field">
+        <label class="lbl" for="email">Correo electrónico</label>
+        <input class="text" type="email" id="email" name="email" autocomplete="email" inputmode="email" required aria-describedby="email-err">
+        <p class="error" id="email-err" hidden></p>
+      </div>
+      <div class="field">
+        <label class="lbl" for="pass">Contraseña</label>
+        <input class="text" type="password" id="pass" name="pass" autocomplete="current-password" required aria-describedby="pass-err">
+        <p class="error" id="pass-err" hidden></p>
+      </div>
+      <p class="error" id="form-err" role="alert" hidden></p>
+      <button class="btn" type="submit">Ingresar</button>
+    </form>
+    <p class="fine-link">¿No tenés cuenta? <a href="/registro.html" id="to-reg">Registrate</a></p>
+  </div>
+  <p class="alt-note"><a href="/canasta.html">Seguir sin cuenta</a>: podés armar tu canasta y comparar precios igual.</p>
+</main>
+
+<script src="/js/menu.js"></script>
+<script src="/js/api.js"></script>
+<script src="/js/session.js"></script>
+<script>PreciumSession.renderNav(document.getElementById('nav-auth'));</script>
+<script src="/js/auth.js"></script>
+<script>PreciumAuth.init("login");</script>
+</body>
+</html>
